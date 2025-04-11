@@ -30,26 +30,20 @@ const Navbar = () => {
             <Link to="/" className="text-gray-600 hover:text-gray-900">
               Home
             </Link>
-            <Link to="/diagnose" className="text-gray-600 hover:text-gray-900">
-              Diagnose Crop
-            </Link>
-            <Link to="/search" className="text-gray-600 hover:text-gray-900">
-              Search Crops
-            </Link>
-            <Link to="/yield" className="text-gray-600 hover:text-gray-900">
-              Yield Prediction
+            <Link to="/detector" className="text-gray-600 hover:text-gray-900">
+              Disease Detector
             </Link>
             {authUser && (
               <>
-                <Link to="/scans" className="text-gray-600 hover:text-gray-900">
-                  My Scans
+                <Link to="/dashboard" className="text-gray-600 hover:text-gray-900">
+                  Dashboard
+                </Link>
+                <Link to="/profile" className="text-gray-600 hover:text-gray-900">
+                  Profile
                 </Link>
                 <Link to="/settings" className="text-gray-600 hover:text-gray-900">
                   Settings
                 </Link>
-            <Link to="/dashboard" className="text-gray-600 hover:text-gray-900">
-             Dashboard
-            </Link>
               </>
             )}
           </div>

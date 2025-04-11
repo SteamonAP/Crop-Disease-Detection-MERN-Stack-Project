@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuthStore } from '../store/useAuthStore';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const { authUser } = useAuthStore();
@@ -13,19 +14,18 @@ const HomePage = () => {
             {/* Left Side */}
             <div className="text-center md:w-1/2 md:text-left">
               <h1 className="font-crimson-text text-4xl font-bold text-[#2C5324] md:text-6xl">
-                Smart Farming Solutions for Better Yields
+                Smart Plant Disease Detection
               </h1>
               <p className="mt-6 text-lg text-[#5B7355]">
-                Use AI-powered tools to monitor crop health, predict yields, and
-                make data-driven farming decisions.
+                Use AI-powered tools to detect plant diseases, get treatment recommendations, and ensure healthy crops.
               </p>
               <div className="mt-8">
-                <a
-                  href="/diagnose"
+                <Link
+                  to="/detector"
                   className="inline-block rounded-lg bg-[#2C5324] px-8 py-3 text-lg font-semibold text-white transition-all hover:bg-[#1F3A19] hover:shadow-lg"
                 >
-                  Get Started <i className="fas fa-arrow-right ml-2"></i>
-                </a>
+                  Detect Disease Now
+                </Link>
               </div>
             </div>
 
@@ -54,10 +54,10 @@ const HomePage = () => {
                 <i className="fas fa-camera text-2xl text-[#2C5324]"></i>
               </div>
               <h3 className="mt-4 text-xl font-semibold text-[#2C5324]">
-                Scan Your Crops
+                Upload Plant Image
               </h3>
               <p className="mt-2 text-[#5B7355]">
-                Take or upload photos of your crops for instant analysis
+                Take or upload a clear photo of your plant's affected area
               </p>
             </div>
 
@@ -70,7 +70,7 @@ const HomePage = () => {
                 AI Analysis
               </h3>
               <p className="mt-2 text-[#5B7355]">
-                Our AI identifies diseases and predicts crop yields
+                Our AI model analyzes the image to identify potential diseases
               </p>
             </div>
 
@@ -80,10 +80,10 @@ const HomePage = () => {
                 <i className="fas fa-leaf text-2xl text-[#2C5324]"></i>
               </div>
               <h3 className="mt-4 text-xl font-semibold text-[#2C5324]">
-                Get Insights
+                Get Results
               </h3>
               <p className="mt-2 text-[#5B7355]">
-                Receive detailed reports and actionable recommendations
+                Receive detailed diagnosis and treatment recommendations
               </p>
             </div>
           </div>

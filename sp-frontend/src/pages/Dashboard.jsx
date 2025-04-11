@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
+import { axiosInstance } from "../lib/axios";
+import { toast } from "react-hot-toast";
+import { Loader2 } from "lucide-react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import { Loader } from "lucide-react";
+import RecentScans from '../components/RecentScans';
 
 const Dashboard = () => {
   const { authUser } = useAuthStore();
@@ -39,7 +43,7 @@ const Dashboard = () => {
   if (!authUser) {
     return (
       <div className="flex h-screen items-center justify-center">
-        <Loader className="size-10 animate-spin" />
+        <Loader2 className="size-10 animate-spin" />
       </div>
     );
   }
@@ -57,18 +61,32 @@ const Dashboard = () => {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Link
-            to="/diagnose"
+            to="/detector"
             className="group rounded-xl bg-white p-6 shadow-sm transition-all hover:shadow-md"
           >
-            <div className="mb-4 text-[#357AFF]">
-              <i className="fas fa-microscope text-3xl"></i>
+            <div className="flex items-center gap-4 mb-4">
+              <div className="bg-[#357AFF]/10 p-3 rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-[#357AFF]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                  />
+                </svg>
+              </div>
+              <h2 className="text-xl font-semibold group-hover:text-[#357AFF]">
+                Diagnose Crop
+              </h2>
             </div>
-            <h2 className="mb-2 text-xl font-semibold text-gray-800">
-              Diagnose Crop
-            </h2>
             <p className="text-gray-600">
-              Upload photos to identify crop diseases and get treatment
-              recommendations
+              Upload photos to identify crop diseases and get treatment recommendations
             </p>
           </Link>
 
@@ -109,7 +127,7 @@ const Dashboard = () => {
           </h2>
           {loadingScans ? (
             <div className="flex justify-center py-8">
-              <Loader className="size-10 animate-spin" />
+              <Loader2 className="size-10 animate-spin" />
             </div>
           ) : scanError ? (
             <div className="rounded-lg bg-red-50 p-4 text-red-600">
@@ -121,7 +139,7 @@ const Dashboard = () => {
                 No scans yet. Start by diagnosing your first crop!
               </p>
               <Link
-                to="/diagnose"
+                to="/detector"
                 className="mt-4 inline-block rounded-lg bg-[#357AFF] px-4 py-2 text-white hover:bg-blue-600"
               >
                 Start Scan
@@ -157,7 +175,7 @@ const Dashboard = () => {
           </h2>
           <div className="flex flex-wrap gap-3">
             <Link
-              to="/diagnose"
+              to="/detector"
               className="rounded-lg bg-[#357AFF] px-4 py-2 text-white hover:bg-blue-600"
             >
               New Scan
@@ -176,6 +194,8 @@ const Dashboard = () => {
             </Link>
           </div>
         </div>
+
+        <RecentScans />
       </main>
     </div>
   );
