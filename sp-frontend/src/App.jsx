@@ -11,6 +11,7 @@ import ProfilePage from "./pages/ProfilePage";
 import SettingsPage from "./pages/SettingsPage";
 import DetectorPage from "./pages/DetectorPage";
 import ScanDetails from './pages/ScanDetails';
+import CropKnowledgePage from './pages/CropKnowledgePage';
 import { Loader } from "lucide-react";
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/settings" element={authUser ? <SettingsPage /> : <Navigate to="/login" />} />
           <Route path="/detector" element={authUser ? <DetectorPage /> : <Navigate to="/login" />} />
           <Route path="/scan/:id" element={authUser ? <ScanDetails /> : <Navigate to="/login" />} />
+          <Route path="/crop-knowledge" element={authUser ? <CropKnowledgePage /> : <Navigate to="/login" />} />
         </Routes>
         <Toaster />
       </div>

@@ -33,6 +33,9 @@ const Navbar = () => {
             <Link to="/detector" className="text-gray-600 hover:text-gray-900">
               Disease Detector
             </Link>
+            <Link to="/crop-knowledge" className="text-gray-600 hover:text-gray-900">
+              Crop Knowledge
+            </Link>
             {authUser && (
               <>
                 <Link to="/dashboard" className="text-gray-600 hover:text-gray-900">

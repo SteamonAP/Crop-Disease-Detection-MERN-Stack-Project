@@ -1,0 +1,338 @@
+{
+  "Tomato": {
+    "icon": "🍅",
+    "description": "A popular warm-season crop that requires full sun and well-drained soil.",
+    "Plant Selection": {
+      "description": "Choose disease-resistant varieties suitable for your climate.",
+      "recommended": ["Celebrity", "Better Boy", "Roma", "Cherry", "Beefsteak"],
+      "tips": "Consider determinate varieties for containers and indeterminate for trellising"
+    },
+    "Site Selection": {
+      "description": "Select a sunny location with well-drained soil.",
+      "requirements": ["6-8 hours of direct sunlight", "Well-drained soil", "pH 6.0-6.8"],
+      "tips": "Avoid areas where tomatoes, peppers, or eggplants were grown recently"
+    },
+    "Field Preparation": {
+      "description": "Prepare soil with organic matter and ensure proper drainage.",
+      "steps": [
+        "Test soil pH and amend if needed",
+        "Add 2-3 inches of compost",
+        "Ensure good drainage",
+        "Remove weeds and debris"
+      ]
+    },
+    "Planting Method": {
+      "description": "Proper spacing and planting depth are crucial for healthy growth.",
+      "spacing": "24-36 inches apart in rows 3-4 feet apart",
+      "depth": "Plant seedlings deeper than they were in pots",
+      "tips": "Use stakes or cages at planting time to avoid damaging roots later"
+    },
+    "Irrigation Schedule": {
+      "description": "Consistent watering is key to preventing blossom end rot.",
+      "schedule": "Water deeply 1-2 times per week, more in hot weather",
+      "method": "Water at base, avoid wetting leaves",
+      "tips": "Use drip irrigation or soaker hoses for best results"
+    },
+    "Fertilization": {
+      "description": "Proper nutrition ensures healthy growth and good yields.",
+      "Organic": {
+        "materials": ["Compost", "Well-rotted manure", "Fish emulsion"],
+        "application": "Apply 2-3 inches of compost at planting"
+      },
+      "Chemical": {
+        "type": "Balanced fertilizer (10-10-10)",
+        "schedule": "Apply at planting and side-dress when fruits set"
+      }
+    },
+    "Weeding": {
+      "description": "Keep area weed-free to prevent competition and disease.",
+      "methods": ["Mulching", "Hand weeding", "Shallow cultivation"],
+      "tips": "Use organic mulch like straw or grass clippings"
+    },
+    "Pest Management": {
+      "description": "Monitor and manage common pests using integrated methods.",
+      "common_pests": ["Aphids", "Hornworms", "Whiteflies", "Tomato fruitworms"],
+      "methods": ["Hand picking", "Neem oil", "Beneficial insects", "Row covers"]
+    },
+    "Harvesting": {
+      "description": "Harvest at the right time for best flavor and quality.",
+      "signs": "Fruits fully colored but still firm",
+      "method": "Twist gently or use pruning shears",
+      "tips": "Harvest regularly to encourage more production"
+    },
+    "Post Harvesting": {
+      "description": "Proper storage maintains quality and extends shelf life.",
+      "storage": "Room temperature until fully ripe, then refrigerate",
+      "tips": "Do not refrigerate unripe tomatoes as it affects flavor"
+    }
+  },
+  "Potato": {
+    "icon": "🥔",
+    "description": "A cool-season crop that produces underground tubers.",
+    "Plant Selection": {
+      "description": "Choose certified seed potatoes for best results.",
+      "recommended": ["Russet", "Yukon Gold", "Red Pontiac", "Fingerling"],
+      "tips": "Select varieties suited to your growing season length"
+    },
+    "Site Selection": {
+      "description": "Choose a sunny location with loose, well-drained soil.",
+      "requirements": ["Full sun", "Loose soil", "Good drainage"],
+      "tips": "Avoid areas where potatoes were grown recently"
+    },
+    "Field Preparation": {
+      "description": "Prepare soil to ensure good tuber development.",
+      "steps": [
+        "Remove rocks and debris",
+        "Add organic matter",
+        "Ensure good drainage",
+        "Test soil pH (5.0-6.0 ideal)"
+      ]
+    },
+    "Planting Method": {
+      "description": "Proper planting ensures good tuber development.",
+      "spacing": "12 inches apart in rows 30-36 inches apart",
+      "depth": "Plant 4-6 inches deep",
+      "tips": "Cut seed potatoes into pieces with at least 2 eyes each"
+    },
+    "Irrigation Schedule": {
+      "description": "Consistent moisture is crucial for tuber development.",
+      "schedule": "Keep soil moist but not waterlogged",
+      "method": "Water deeply and evenly",
+      "tips": "Increase watering during tuber formation"
+    },
+    "Fertilization": {
+      "description": "Proper nutrition ensures good tuber development.",
+      "Organic": {
+        "materials": ["Compost", "Well-rotted manure"],
+        "application": "Apply before planting"
+      },
+      "Chemical": {
+        "type": "Balanced fertilizer (10-10-10)",
+        "tips": "Avoid high nitrogen fertilizers"
+      }
+    },
+    "Weeding": {
+      "description": "Keep area weed-free to prevent competition.",
+      "methods": ["Hilling", "Mulching", "Hand weeding"],
+      "tips": "Hill soil around plants as they grow"
+    },
+    "Pest Management": {
+      "description": "Monitor and manage common pests.",
+      "common_pests": ["Colorado potato beetles", "Aphids", "Wireworms"],
+      "methods": ["Hand picking", "Row covers", "Beneficial insects"]
+    },
+    "Harvesting": {
+      "description": "Harvest at the right time for best quality.",
+      "signs": "Plants die back",
+      "method": "Dig carefully to avoid damaging tubers",
+      "tips": "Harvest on a dry day"
+    },
+    "Post Harvesting": {
+      "description": "Proper curing and storage are essential.",
+      "curing": "2 weeks in cool, dark, well-ventilated area",
+      "storage": "Cool, dark, well-ventilated area",
+      "tips": "Do not wash before storage"
+    }
+  },
+  "Corn": {
+    "icon": "🌽",
+    "description": "A warm-season crop that requires full sun and fertile soil.",
+    "Plant Selection": {
+      "description": "Choose varieties suited to your climate.",
+      "recommended": ["Sweet Corn", "Popcorn", "Flint Corn"],
+      "tips": "Consider days to maturity and disease resistance"
+    },
+    "Site Selection": {
+      "description": "Select a sunny location with fertile soil.",
+      "requirements": ["Full sun", "Fertile soil", "Good drainage"],
+      "tips": "Corn needs full sun for optimal growth"
+    },
+    "Field Preparation": {
+      "description": "Prepare soil for optimal growth.",
+      "steps": [
+        "Add organic matter",
+        "Ensure good drainage",
+        "Test soil fertility",
+        "Remove weeds"
+      ]
+    },
+    "Planting Method": {
+      "description": "Plant in blocks for better pollination.",
+      "spacing": "8-12 inches apart in blocks",
+      "depth": "1-2 inches deep",
+      "tips": "Plant in blocks rather than single rows"
+    },
+    "Irrigation Schedule": {
+      "description": "Consistent moisture is crucial.",
+      "schedule": "Water deeply once a week",
+      "method": "Water at base of plants",
+      "tips": "Critical during tasseling and silking"
+    },
+    "Fertilization": {
+      "description": "Proper nutrition ensures good ear development.",
+      "Organic": {
+        "materials": ["Compost", "Well-rotted manure"],
+        "application": "Apply before planting"
+      },
+      "Chemical": {
+        "type": "Nitrogen-rich fertilizer",
+        "schedule": "Side-dress when plants are 12 inches tall"
+      }
+    },
+    "Weeding": {
+      "description": "Keep area weed-free, especially when young.",
+      "methods": ["Mulching", "Hand weeding", "Shallow cultivation"],
+      "tips": "Be careful not to damage shallow roots"
+    },
+    "Pest Management": {
+      "description": "Monitor and manage common pests.",
+      "common_pests": ["Corn earworms", "Armyworms", "Aphids"],
+      "methods": ["Hand picking", "Beneficial insects", "Row covers"]
+    },
+    "Harvesting": {
+      "description": "Harvest at peak freshness.",
+      "signs": "Silks brown and kernels full",
+      "method": "Twist ear downward and pull",
+      "tips": "Check for milky juice when punctured"
+    },
+    "Post Harvesting": {
+      "description": "Use immediately for best flavor.",
+      "storage": "Refrigerate if not using immediately",
+      "tips": "Best used within 2-3 days of harvest"
+    }
+  },
+  "Carrot": {
+    "icon": "🥕",
+    "description": "A cool-season root vegetable that thrives in loose, sandy soil.",
+    "Plant Selection": {
+      "description": "Choose varieties based on your soil type and desired shape.",
+      "recommended": ["Nantes", "Danvers", "Chantenay", "Imperator", "Baby Carrot"],
+      "tips": "Shorter varieties better for heavy or rocky soils"
+    },
+    "Site Selection": {
+      "description": "Select a sunny location with loose, stone-free soil.",
+      "requirements": ["Full sun", "Loose, well-drained soil", "pH 6.0-6.8"],
+      "tips": "Avoid nitrogen-rich beds from previous year"
+    },
+    "Field Preparation": {
+      "description": "Prepare deep, loose soil for straight root development.",
+      "steps": [
+        "Remove all stones and debris",
+        "Loosen soil to 12 inches deep",
+        "Add sand if soil is heavy",
+        "Mix in 1-2 inches of compost"
+      ]
+    },
+    "Planting Method": {
+      "description": "Sow seeds directly in garden for best results.",
+      "spacing": "2-3 inches apart in rows 12-18 inches apart",
+      "depth": "Sow seeds 1/4 inch deep",
+      "tips": "Mix seeds with sand for even distribution"
+    },
+    "Irrigation Schedule": {
+      "description": "Keep soil consistently moist for even growth.",
+      "schedule": "Light watering every 3-4 days",
+      "method": "Gentle watering to avoid washing away seeds",
+      "tips": "Reduce watering as roots mature to prevent splitting"
+    },
+    "Fertilization": {
+      "description": "Moderate fertility with emphasis on phosphorus and potassium.",
+      "Organic": {
+        "materials": ["Compost", "Wood ash", "Bone meal"],
+        "application": "Mix into soil before planting"
+      },
+      "Chemical": {
+        "type": "Low-nitrogen fertilizer (5-10-10)",
+        "schedule": "Apply at planting only"
+      }
+    },
+    "Weeding": {
+      "description": "Weed carefully to avoid disturbing shallow roots.",
+      "methods": ["Hand weeding", "Mulching after germination"],
+      "tips": "Use straw mulch to keep shoulders from turning green"
+    },
+    "Pest Management": {
+      "description": "Protect from root and foliage pests.",
+      "common_pests": ["Carrot rust fly", "Aphids", "Leafhoppers"],
+      "methods": ["Floating row covers", "Companion planting with onions", "Neem oil"]
+    },
+    "Harvesting": {
+      "description": "Harvest when roots reach desired size.",
+      "signs": "Shoulders 1/2 to 3/4 inch diameter",
+      "method": "Loosen soil and pull straight up",
+      "tips": "Harvest after rain for easier pulling"
+    },
+    "Post Harvesting": {
+      "description": "Proper handling preserves sweetness and texture.",
+      "storage": "Remove tops and store in cool, humid place",
+      "tips": "Can be left in ground with mulch in mild winters"
+    }
+  },
+  "Strawberry": {
+    "icon": "🍓",
+    "description": "A perennial fruit crop that produces sweet berries.",
+    "Plant Selection": {
+      "description": "Choose varieties suited to your climate.",
+      "recommended": ["June-bearing", "Everbearing", "Day-neutral"],
+      "tips": "Consider your climate and desired harvest period"
+    },
+    "Site Selection": {
+      "description": "Select a sunny location with well-drained soil.",
+      "requirements": ["Full sun", "Well-drained soil", "pH 5.5-6.5"],
+      "tips": "Avoid areas where strawberries were grown recently"
+    },
+    "Field Preparation": {
+      "description": "Prepare soil for optimal growth.",
+      "steps": [
+        "Test soil pH",
+        "Add organic matter",
+        "Ensure good drainage",
+        "Remove weeds"
+      ]
+    },
+    "Planting Method": {
+      "description": "Proper planting ensures good establishment.",
+      "spacing": "12-18 inches apart in rows 3-4 feet apart",
+      "depth": "Plant with crown at soil level",
+      "tips": "Remove flowers in first year for better establishment"
+    },
+    "Irrigation Schedule": {
+      "description": "Consistent moisture is crucial.",
+      "schedule": "Water regularly, especially during fruit development",
+      "method": "Drip irrigation or soaker hoses",
+      "tips": "Avoid wetting leaves and fruit"
+    },
+    "Fertilization": {
+      "description": "Proper nutrition ensures good fruit production.",
+      "Organic": {
+        "materials": ["Compost", "Well-rotted manure"],
+        "application": "Apply in early spring"
+      },
+      "Chemical": {
+        "type": "Balanced fertilizer",
+        "schedule": "Apply in early spring and after harvest"
+      }
+    },
+    "Weeding": {
+      "description": "Keep area weed-free to prevent competition.",
+      "methods": ["Mulching", "Hand weeding"],
+      "tips": "Use straw mulch to keep fruit clean"
+    },
+    "Pest Management": {
+      "description": "Monitor and manage common pests.",
+      "common_pests": ["Slugs", "Birds", "Spider mites"],
+      "methods": ["Netting", "Hand picking", "Beneficial insects"]
+    },
+    "Harvesting": {
+      "description": "Harvest at peak ripeness.",
+      "signs": "Fully red and slightly soft",
+      "method": "Pinch stem above berry",
+      "tips": "Harvest in morning when cool"
+    },
+    "Post Harvesting": {
+      "description": "Handle carefully to maintain quality.",
+      "storage": "Refrigerate immediately",
+      "tips": "Do not wash until ready to use"
+    }
+  }
+} 

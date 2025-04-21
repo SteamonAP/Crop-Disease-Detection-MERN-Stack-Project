@@ -9,6 +9,7 @@ import http from "http";
 import authRoutes from "./routes/auth.route.js";
 import predictionRoutes from "./routes/prediction.route.js";
 import scanRoutes from "./routes/scan.route.js";
+import cropRoutes from "./routes/crop.route.js";
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.use(cors({
 app.use("/api/auth", authRoutes);
 app.use("/api/prediction", predictionRoutes);
 app.use("/api/scan", scanRoutes);
+app.use("/api/crop", cropRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {

@@ -41,7 +41,12 @@ axiosInstance.interceptors.response.use(
           toast.error("You don't have permission to access this resource");
           break;
         case 404:
-          toast.error("Resource not found");
+          // Special handling for crop not found
+          if (error.response.config.url.includes('/crop/crops/')) {
+            toast.error(error.response.data?.message || "Crop not found in our database");
+          } else {
+            toast.error("Resource not found");
+          }
           break;
         case 500:
           toast.error("Server error. Please try again later");
